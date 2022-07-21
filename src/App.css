@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+/* GENERAL STYLE*/
+
+* {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-wrapper{
+    width: 100%;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* HEADER STYLE*/
+.header-wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2d5e6;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.3);
 }
 
-.App-link {
-  color: #61dafb;
+.header-logo{
+    width: 40px;
+    margin-right: 1%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* CARD STYLE*/
+.card-list{
+    list-style: none;
 }
+
+.card-wrapper{
+    display:flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 25px 30px 50px;
+}
+.card-info-wrapper{
+    margin-left: 19px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.card-location{
+    display:flex;
+    align-items: center;   
+}
+.google-location{
+    font-size: 10px;
+    color: lightgrey;
+}
+.google-location:hover{
+    color:blueviolet;
+}
+.country{
+    font-size: 16px;
+    margin-right: 12px;
+}
+.marker{
+    width:20px;
+    margin-right: 4px;
+}
+
+.card-date{
+    font-size: 18px;
+}
+
+.card-description{
+    font-size: 12px;
+    overflow: hidden;
+  text-overflow: ellipsis;
+  height: 20px;
+}
+
+.card-description-expanded{
+    font-size: 12px;
+    
+    
+}
+.card-image{
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.expander{
+    color:#e2d5e6;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
